@@ -11,13 +11,14 @@
 
 <body>
   <header>
+    <!-- Navbar -->
     <nav class="block lg:hidden">
       <div class="p-0.5 bg-[#AE9142]">
       </div>
       <div class="flex p-3 items-center justify-center bg-[#0C2340]">
         <img src="/src/assets/logo.png" alt="">
       </div>
-      <div class="py-4 px-8 sm:px-0 max-w-xl mx-auto flex justify-between items-center *:text-sm *:items-center *:flex *:flex-col">
+      <div class=" py-4 px-8 sm:px-0 max-w-xl mx-auto flex justify-between items-center *:text-sm *:items-center *:flex *:flex-col">
         <a href="">
           <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(12,35,64,1)">
             <path d="M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM9 9.99998V16H15V9.99998H9ZM11 12H13V14H11V12Z"></path>
@@ -44,10 +45,10 @@
         </a>
       </div>
     </nav>
-    <nav class="hidden lg:block">
+    <nav class="relative hidden lg:block">
       <div class="p-0.5 bg-[#AE9142]">
       </div>
-      <div class="bg-[rgb(12,35,64)] pt-5 pb-0 items-center text-white flex gap-10 justify-end px-10">
+      <div class="bg-[rgb(12,35,64)] pt-5 pb-0 items-center text-white flex gap-10 justify-end px-20">
         <ul class="font-bold flex gap-10 border-r pr-10">
           <li><a href="">About</a></li>
           <li><a href="">Visit</a></li>
@@ -79,11 +80,103 @@
           </li>
         </ul>
       </div>
-      <div class="px-8 pb-3 flex items-center bg-[#0C2340]">
+      <div class="px-8 pb-8 flex items-center bg-[#0C2340]">
         <img src="/src/assets/logo.png" alt="">
       </div>
+      <div class="-bottom-[25%] pr-[5%] flex justify-end absolute bg-transparent w-full">
+        <div class="border border-black *:py-5 px-6 gap-8 flex bg-white">
+          <a class="text-gray-500" href="">Academics</a>
+          <a class="text-gray-500" href="">Admissions</a>
+          <a class="text-gray-500" href="">Research</a>
+          <a class="text-gray-500" href="">Global</a>
+          <a class="text-gray-500" href="">Faith & Service</a>
+          <a class="text-gray-500" href="">Campus Life</a>
+          <a class="text-gray-500 py-0 pl-6 border-l" href="">
+            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(12,35,64,1)">
+              <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
     </nav>
+    <!-- Hero -->
+    <div class="hero flex justify-center bg-[url('https://www.nd.edu/assets/features/wwyff-takeover/images/campus_spring_scenic-1920.webp')]">
+      <div class="w-full lg:py-20 md:items-end bg-[#0C2340]/70  py-10 flex flex-col items-center gap-10 px-16">
+        <img class="w-72 xl:w-[20%]" src="https://www.nd.edu/assets/features/wwyff-takeover/images/logo-wwyff-w.svg" alt="">
+        <p class="text-white md:pl-[63%] lg:text-2xl lg:pl-[70%] text-center">
+          Notre Dame attracts people willing to take action to find solutions to humanity's most pressing challenges. "What would you fight for?" For us, it's not a question. It's a call to action. We are the Fighting Irish.
+        </p>
+        <a class="flex w-fit gap-1 py-3.5 px-4.5 bg-white rounded-lg" href="">
+          <p>What would you fight for?</p>
+          <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(209,213,220,1)">
+            <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V12L17.206 8.207L11.2071 14.2071L9.79289 12.7929L15.792 6.793L12 3H21Z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
   </header>
+  <main class="">
+
+    <!-- First Section -->
+    <section class="section-one">
+      <div class="flex flex-col lg:flex-row p-4 gap-10">
+        <div class="hover:scale-[101%] hover:cursor-pointer hover:bg-blue-900/20 hover:border-b-3 hover:border-blue-900/30 flex lg:flex-col md:flex-row flex-col">
+          <img class="md:w-sm lg:w-auto" src="https://news.nd.edu/assets/604955/800x/globering_2025.jpg" alt="">
+          <div class="p-6 flex flex-col hover:**:visible gap-2">
+            <h3 class="text-gray-500 font-medium">UNIVERSITY</h3>
+            <div class="flex">
+              <p class="flex-4 text-2xl text-[#0C2340] font-medium">University of Notre Dame wins award for excellence in campus internationalization
+              </p>
+              <div class="flex-1 flex justify-end md:justify-start">
+                <svg class="md:invisible w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(174,145,66,1)">
+                  <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10 xl:gap-14 xl:pt-5 lg:flex-row xl:flex-col">
+          <div class="h-fit hover:scale-[101%] hover:cursor-pointer hover:bg-blue-900/20 hover:border-b-3 hover:border-blue-900/30   p-6 flex flex-col hover:**:visible gap-2">
+            <h3 class="text-gray-500 font-medium">COLLEGES AND SCHOOLS</h3>
+            <div class="flex">
+              <p class="md:flex-1 lg:flex-3 flex-4 text-2xl text-[#0C2340] font-medium">Physicist Laura Fields granted a Presidential Early Career Award</p>
+              <div class="flex-1 flex justify-end md:justify-start">
+                <svg class=" md:invisible w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(174,145,66,1)">
+                  <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="h-fit hover:scale-[101%] hover:cursor-pointer hover:bg-blue-900/20 hover:border-b-3 hover:border-blue-900/30  p-6 flex flex-col hover:**:visible gap-2">
+            <h3 class="text-gray-500 font-medium">GLOBAL</h3>
+            <div class="flex">
+              <p class="md:flex-1 lg:flex-2 flex-4 text-2xl text-[#0C2340] font-medium">University of Notre Dame and Pontificia Universidad Católica de Chile dual PhD program welcomes all disciplines</p>
+              <div class="flex-1 flex md:justify-start justify-end">
+                <svg class="md:invisible w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(174,145,66,1)">
+                  <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Section -->
+    <section class="section-two">
+      <div>
+        <div>
+          <div class="relative">
+            <div class="absolute w-[98%] ml-[1%] h-[98%] mt-[1%] border-2 m-"></div>
+            <img class="w-full" src="https://www.nd.edu/assets/images/home/pillar-research-800.avif" alt="">
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
