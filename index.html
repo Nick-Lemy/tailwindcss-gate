@@ -9,16 +9,18 @@
   <link rel="stylesheet" href="/src/styles.css">
 </head>
 
-<body>
-  <header>
+<body class="relative">
+  <header class="relative">
     <!-- Navbar -->
+    <div class="top-0 sticky p-0.5 bg-[#AE9142]">
+    </div>
     <nav class="block lg:hidden">
-      <div class="p-0.5 bg-[#AE9142]">
-      </div>
       <div class="flex p-3 items-center justify-center bg-[#0C2340]">
         <img src="/src/assets/logo.png" alt="">
       </div>
-      <div class=" py-4 px-8 sm:px-0 max-w-xl mx-auto flex justify-between items-center *:text-sm *:items-center *:flex *:flex-col">
+    </nav>
+    <div class="bg-white top-1 lg:hidden sticky py-4 w-full sm:px-0 flex">
+      <div class="flex flex-row w-full max-w-2xl mx-auto justify-between items-center *:text-sm *:items-center *:flex *:flex-col">
         <a href="">
           <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(12,35,64,1)">
             <path d="M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM9 9.99998V16H15V9.99998H9ZM11 12H13V14H11V12Z"></path>
@@ -44,7 +46,7 @@
           <p>MENU</p>
         </a>
       </div>
-    </nav>
+    </div>
     <nav class="relative hidden lg:block">
       <div class="p-0.5 bg-[#AE9142]">
       </div>
